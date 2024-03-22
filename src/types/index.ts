@@ -20,4 +20,6 @@ export type Film = {
 
 export type FilmsContextType = {
   filmes: Film[],
+  favFilmes: Film[],
+  setFavFilmes: React.Dispatch<React.SetStateAction<Film[]>>,
 };

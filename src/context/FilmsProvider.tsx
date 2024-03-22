@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import FilmsContext from './FilmsContext';
+import { Film } from '../types';
 
 type ThemeProviderProps = {
   children: React.ReactNode;
 };
 
 function FilmsProvider({ children }: ThemeProviderProps) {
-  const [filmes, setFilmes] = useState([]);
+  const [filmes, setFilmes] = useState<Film[]>([]);
+  const [favFilmes, setFavFilmes] = useState<Film[]>([]);
 
   useEffect(() => {
     const FetchApi = async () => {
@@ -23,7 +25,7 @@ function FilmsProvider({ children }: ThemeProviderProps) {
   }, []);
 
   return (
-    <FilmsContext.Provider value={ { filmes } }>
+    <FilmsContext.Provider value={ { filmes, favFilmes, setFavFilmes } }>
       { children }
     </FilmsContext.Provider>
   );

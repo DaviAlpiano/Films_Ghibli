@@ -3,7 +3,22 @@ import FilmsContext from '../context/FilmsContext';
 import Header from '../components/Header';
 
 export default function Home() {
-  const { filmes } = useContext(FilmsContext);
+  const { filmes, favFilmes, setFavFilmes } = useContext(FilmsContext);
+
+  function handleChange(e:React.MouseEvent<HTMLButtonElement>) {
+    const filmeId = e.currentTarget.id;
+    const filmeExistente = favFilmes.find((filme) => filme.id === filmeId);
+
+    if (filmeExistente) {
+      const news = favFilmes.filter((filme) => filme.id !== filmeId);
+      setFavFilmes(news);
+    } else {
+      const filmeNew = filmes.find((filme) => filme.id === filmeId);
+      if (filmeNew) {
+        setFavFilmes([...favFilmes, filmeNew]);
+      }
+    }
+  }
   return (
     <div>
       <Header />
@@ -12,7 +27,7 @@ export default function Home() {
         <div key={ filme.id }>
           <h2>{filme.title}</h2>
           <img src={ filme.movie_banner } alt={ filme.title } />
-          <button>Favorite</button>
+          <button id={ filme.id } onClick={ handleChange }>Favorite</button>
         </div>))}
     </div>
   );
