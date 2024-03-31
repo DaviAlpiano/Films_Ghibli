@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+}
+.nav {
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    font-size: 40px;
+    padding-right: 100px;
+    background-color: #007DF9;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 300px; 
+    background-position: 80px;
+}
+
+a {
+    color: black    ;
+}

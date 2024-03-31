@@ -1,13 +1,24 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,900;1,900&family=Inter:wght@100..900&family=Single+Day&display=swap');
+
+:root {
+  --yellow: rgb(250, 230, 10);
+  --white: #FFFFFF;
+  --shadow: #0000001a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Single Day';
+  font-weight: 600;
+}
+
+h1, h2 {
+  text-shadow:
+    -1px -1px 0 var(--yellow),  
+     1px -1px 0 var(--yellow),
+    -1px  1px 0 var(--yellow),
+     1px  1px 0 var(--yellow); 
+  border-color: var(--yellow);
 }
