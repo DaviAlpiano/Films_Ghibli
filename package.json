@@ -19,6 +19,7 @@
     "build": "vite build",
     "test": "vitest",
     "dev": "vite --open",
+    "start": "vite --open --port 3000",
     "preview": "vite preview",
     "coverage": "vitest run --coverage --watch=false",
     "lint:styles": "npx stylelint '**/*.css'",
