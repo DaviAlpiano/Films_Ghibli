@@ -1,13 +1,16 @@
 import style from './Footer.module.css';
+import bolofofo from '../img/bolofofo.png';
+import castelo from '../img/castelo.png';
+import arte from '../img/arte.jpg'; 
 
 export default function Footer() {
   return (
     <footer className={ style.footer }>
-      <img src="src/img/castelo.png" alt="bolofofo" className={ style.castelo } />
+      <img src={castelo} alt="bolofofo" className={ style.castelo } />
       <h1>STUDIO</h1>
-      <img src="src/img/bolofofo.png" alt="bolofofo" className={ style.bolofofo } />
+      <img src={bolofofo} alt="bolofofo" className={ style.bolofofo } />
       <h1>GHIBLI</h1>
-      <img src="src/img/arte.jpg" alt="bolofofo" className={ style.arte } />
+      <img src={arte} alt="bolofofo" className={ style.arte } />
     </footer>
   );
 }
