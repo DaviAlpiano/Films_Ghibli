@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import Header from '../components/Header';
 import FilmsContext from '../context/FilmsContext';
 import style from './Home.module.css';
 
@@ -17,8 +16,8 @@ export default function Favorites() {
   }
 
   return (
-    <main className={ style.main }>
-      <Header />
+    <div className={ style.main }>
+      <h1>Favoritados</h1>
       <div className={ style.films }>
 
         {favFilmes.map((filme) => (
@@ -35,6 +34,6 @@ export default function Favorites() {
             </button>
           </div>))}
       </div>
-    </main>
+    </div>
   );
 }

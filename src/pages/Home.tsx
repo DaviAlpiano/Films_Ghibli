@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import FilmsContext from '../context/FilmsContext';
-import Header from '../components/Header';
 import style from './Home.module.css';
 
 export default function Home() {
@@ -21,8 +20,8 @@ export default function Home() {
     }
   }
   return (
-    <main className={ style.main }>
-      <Header />
+    <div className={ style.main }>
+
       <h1>Films</h1>
       <div className={ style.films }>
         {filmes.map((filme) => (
@@ -40,6 +39,6 @@ export default function Home() {
             </button>
           </div>))}
       </div>
-    </main>
+    </div>
   );
 }

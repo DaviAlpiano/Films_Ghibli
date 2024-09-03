@@ -1,0 +1,19 @@
+.footer {
+    background-color: #007DF9;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bolofofo {
+    height: 60%;
+}
+
+.arte {
+    height: 100%;
+}
+
+.castelo {
+    height: 100%;
+}
