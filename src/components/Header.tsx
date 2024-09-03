@@ -7,7 +7,7 @@ export default function Header() {
     <header className={ style.header }>
       <nav className={ style.nav }>
         {pathname === '/favorites' ? (
-          <Link to="/">Films</Link>
+          <Link to="/Films_Ghibli">Films</Link>
         ) : (
           <Link to="/favorites">Favorites</Link>
         )}
