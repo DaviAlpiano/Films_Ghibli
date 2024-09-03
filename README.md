@@ -8,6 +8,12 @@ Site criado com React para aprimorar o conhecimento sobre o uso do Context, o si
 Front-end:
 > Desenvolvido usando: React, Context, CSS, HTML, ES
 
+## Acessar o site
+
+
+> [Ghibli](https://davialpiano.github.io/Films_Ghibli/)
+
+
 ## Instalando Dependências
  
 ```bash
