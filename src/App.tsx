@@ -7,7 +7,7 @@ function App() {
   return (
     <FilmsProvider>
       <Routes>
-        <Route path="/" Component={ Home } />
+        <Route path="/Films_Ghibli" Component={ Home } />
         <Route path="/favorites" Component={ Favorites } />
       </Routes>
     </FilmsProvider>
