@@ -1,0 +1,10 @@
+.all {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    min-height: 100%;
+    flex: 1;
+}
